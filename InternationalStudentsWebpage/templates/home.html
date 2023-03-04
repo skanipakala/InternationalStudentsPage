@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+    <style>
+        /* Center the map and icon-container */
+        .container {
+            text-align: center;
+        }
+        /* Add margin to the top of the icon-container */
+        .icon-container {
+            margin-top: 50px;
+        }
+        /* Position the location pin image on the map */
+        .location-pin {
+            position: absolute; /* Set the position property of the location pin to absolute */
+            top: 50%; /* Center the image vertically */
+            transform: translateY(-50%); /* Center the image vertically */
+            z-index: 1; /* Set the z-index property to ensure the image is on top of the map */
+            width: 30px; /* Set the width property of the location pin to make it smaller */
+        }
+        /* India */
+        #location-pin-1 {
+            top: 40%;
+            left: 59.5%;
+        }
+        /* Denmark */
+        #location-pin-2 {
+            top: 26%;
+            left: 49.5%;
+        }
+        /* Belgium */
+        #location-pin-3 {
+            top: 29%;
+            left: 48.25%;
+        }
+        /* Pakistan */
+        #location-pin-4 {
+            top: 37%;
+            left: 58%;
+        }
+        /* South Korea */
+        #location-pin-5 {
+            top: 34%;
+            left: 66.5%;
+        }
+        /* Extra pins */
+        #location-pin-6 {
+            bottom: 25%;
+            left: 10%;
+        }
+        #location-pin-7 {
+            bottom: 25%;
+            left: 90%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Mental Health Around the World</h1>
+        <p>The Stories of International UMD Students</p>
+        <div class="row">
+            <div class="col-12">
+                <img id="world-map" src="/static/img/worldmap.png" alt="World Map">
+                <img id="location-pin-1" class="location-pin" src="/static/img/red_icon.png" alt="Location Pin">
+                <img id="location-pin-2" class="location-pin" src="/static/img/red_icon.png" alt="Location Pin">
+                <img id="location-pin-3" class="location-pin" src="/static/img/red_icon.png" alt="Location Pin">
+                <img id="location-pin-4" class="location-pin" src="/static/img/red_icon.png" alt="Location Pin">
+                <img id="location-pin-5" class="location-pin" src="/static/img/red_icon.png" alt="Location Pin">
+                <img id="location-pin-6" class="location-pin" src="/static/img/red_icon.png" alt="Location Pin">
+                <img id="location-pin-7" class="location-pin" src="/static/img/red_icon.png" alt="Location Pin">
+                <div class="icon-container">
+                    {% for student in students %}
+                    <div>
+                        <!-- Add the user icon/silhouette with the flag background for each student here -->
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

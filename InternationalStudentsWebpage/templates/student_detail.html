@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ student.name }} | Student Details</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center">{{ student.name }}</h1>
+                <h2 class="text-center">{{ student.country }}</h2>
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="{{ url_for('static', filename='students/' + student.name.lower().replace(' ', '-') + '.jpg') }}" class="img-fluid" alt="{{ student.name }}">
+            </div>
+            <div class="col-md-8">
+                <p>{{ student.quote }}</p>
+                <p>{{ student.bio }}</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
