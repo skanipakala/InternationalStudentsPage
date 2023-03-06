@@ -6,7 +6,8 @@ app = Flask(__name__)
 
 # create data for students
 students = [    
-    {        
+    {    
+    "id": 1,    
     "name": "John Doe",        
     "country": "USA",        
     "picture": "john_doe.jpg",        
@@ -15,7 +16,9 @@ students = [
     "article": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam commodo, magna eu facilisis tincidunt, nisl ante auctor arcu, id commodo magna dui vitae nulla. Donec pellentesque, arcu vel blandit dapibus, mi nunc venenatis sem, vel faucibus orci nibh auctor eros.",        
     "quote": "I love studying abroad!"    
     },    
-    {"name": "Jane Smith",        
+    {
+    "id": 2,
+    "name": "Jane Smith",        
      "country": "Canada",        
      "picture": "jane_smith.jpg",        
      "title": "Adapting to Life in Canada",        
