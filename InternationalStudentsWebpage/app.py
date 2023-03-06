@@ -5,18 +5,26 @@ from flask import Flask, render_template, url_for, jsonify
 app = Flask(__name__)
 
 # create data for students
-students = [
-    {
-        "name": "John Doe",
-        "country": "USA",
-        "quote": "I love studying abroad!"
-    },
-    {
-        "name": "Jane Smith",
-        "country": "Canada",
-        "quote": "I am learning so much from this experience!"
+students = [    
+    {        
+    "name": "John Doe",        
+    "country": "USA",        
+    "picture": "john_doe.jpg",        
+    "title": "Studying Abroad in the US",        
+    "subtitle": "My experience as an international student",        
+    "article": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam commodo, magna eu facilisis tincidunt, nisl ante auctor arcu, id commodo magna dui vitae nulla. Donec pellentesque, arcu vel blandit dapibus, mi nunc venenatis sem, vel faucibus orci nibh auctor eros.",        
+    "quote": "I love studying abroad!"    
+    },    
+    {"name": "Jane Smith",        
+     "country": "Canada",        
+     "picture": "jane_smith.jpg",        
+     "title": "Adapting to Life in Canada",        
+     "subtitle": "My journey as an international student",        
+     "article": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam commodo, magna eu facilisis tincidunt, nisl ante auctor arcu, id commodo magna dui vitae nulla. Donec pellentesque, arcu vel blandit dapibus, mi nunc venenatis sem, vel faucibus orci nibh auctor eros.",        
+     "quote": "I am learning so much from this experience!"    
     }
 ]
+
 
 # define routes
 @app.route("/")
