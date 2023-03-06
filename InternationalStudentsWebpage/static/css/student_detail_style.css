@@ -1,0 +1,37 @@
+/* Center the main heading */
+h1.text-center {
+    text-align: center;
+  }
+  
+  /* Center the subheading */
+  h2.text-center {
+    text-align: center;
+  }
+  
+  /* Add margin to the hr */
+  hr {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* Add padding to the container */
+  .container {
+    padding: 2rem;
+  }
+  
+  /* Add margin to the image */
+  .img-fluid {
+    margin-bottom: 1rem;
+  }
+  
+  /* Adjust font size for quote */
+  p:nth-of-type(1) {
+    font-size: 1.2rem;
+  }
+  
+  /* Adjust font size for bio */
+  p:nth-of-type(2) {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
