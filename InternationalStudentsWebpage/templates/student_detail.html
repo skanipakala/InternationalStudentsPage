@@ -23,8 +23,7 @@
                 <h3>{{ student.title }}</h3>
                 <h4>{{ student.subtitle }}</h4>
                 <p>{{ student.quote }}</p>
-                {% if student.article_file %}
-                <p>{{ open(student.article_file).read() }}</p>
+                <p>{{ article }}</p>
                 {% if student.author %}
                 <p><strong>Author:</strong> {{ student.author }}</p>
                 {% endif %}
