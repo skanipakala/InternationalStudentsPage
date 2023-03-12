@@ -13,7 +13,7 @@ students = [
     "picture": "john_doe.jpg",        
     "title": "Mental health stigma in India causes delays in intervention and treatment",        
     "subtitle": "Some multigenerational families provide guidance for youth while others pass down misconceptions about mental health.",        
-    "article_file": "InternationalStudentsWebpage\static\articles\Divyansh Agrawal\Divyansh_Agrawal.txt",        
+    "article_file": "InternationalStudentsWebpage/static/articles/Divyansh Agrawal/Divyansh_Agrawal.txt",        
     "quote": "I love studying abroad!",
     "author": "By Winter Hawk",
     "audio_file": "divyansh_agrawal_interview.mp3"    
@@ -58,7 +58,7 @@ students = [
 
 # Read the article function
 def read_article(filename):
-    with open(filename, 'r') as f:
+    with open(filename, 'r', encoding='utf-8') as f:
         return f.read()
 
 # define routes
