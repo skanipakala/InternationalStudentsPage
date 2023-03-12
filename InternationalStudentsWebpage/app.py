@@ -53,6 +53,30 @@ students = [
     "quote": "I am learning so much from this experience!",
     "author": "John Smith",
     "audio_file": "divyansh_agrawal_interview.mp3"     
+    }, 
+    {
+    "id": 5,
+    "name": "Jane Smith",        
+    "country": "Canada",        
+    "picture": "jane_smith.jpg",        
+    "title": "Adapting to Life in Canada",        
+    "subtitle": "My journey as an international student",        
+    "article_file": "Divyansh Agrawal.txt",   
+    "quote": "I am learning so much from this experience!",
+    "author": "John Smith",
+    "audio_file": "divyansh_agrawal_interview.mp3"     
+    }, 
+    {
+    "id": 6,
+    "name": "Jane Smith",        
+    "country": "Canada",        
+    "picture": "jane_smith.jpg",        
+    "title": "Adapting to Life in Canada",        
+    "subtitle": "My journey as an international student",        
+    "article_file": "Divyansh Agrawal.txt",   
+    "quote": "I am learning so much from this experience!",
+    "author": "John Smith",
+    "audio_file": "divyansh_agrawal_interview.mp3"     
     }
 ]
 
@@ -66,7 +90,7 @@ def read_article(filename):
 # define routes
 @app.route("/")
 def home():
-    return render_template("home.html")
+    return render_template("home.html", students=students)
 
 @app.route("/students")
 def student_list():
