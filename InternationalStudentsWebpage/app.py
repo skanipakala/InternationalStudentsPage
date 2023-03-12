@@ -8,23 +8,27 @@ app = Flask(__name__)
 students = [    
     {    
     "id": 1,    
-    "name": "John Doe",        
-    "country": "USA",        
+    "name": "Divyansh Agrawal",        
+    "country": "India",        
     "picture": "john_doe.jpg",        
-    "title": "Studying Abroad in the US",        
-    "subtitle": "My experience as an international student",        
+    "title": "Mental health stigma in India causes delays in intervention and treatment",        
+    "subtitle": "Some multigenerational families provide guidance for youth while others pass down misconceptions about mental health.",        
     "article": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam commodo, magna eu facilisis tincidunt, nisl ante auctor arcu, id commodo magna dui vitae nulla. Donec pellentesque, arcu vel blandit dapibus, mi nunc venenatis sem, vel faucibus orci nibh auctor eros.",        
-    "quote": "I love studying abroad!"    
+    "quote": "I love studying abroad!",
+    "author": "John Smith",
+    "audio_file": "divyansh_agrawal_interview.mp3"    
     },    
     {
     "id": 2,
     "name": "Jane Smith",        
-     "country": "Canada",        
-     "picture": "jane_smith.jpg",        
-     "title": "Adapting to Life in Canada",        
-     "subtitle": "My journey as an international student",        
-     "article": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam commodo, magna eu facilisis tincidunt, nisl ante auctor arcu, id commodo magna dui vitae nulla. Donec pellentesque, arcu vel blandit dapibus, mi nunc venenatis sem, vel faucibus orci nibh auctor eros.",        
-     "quote": "I am learning so much from this experience!"    
+    "country": "Canada",        
+    "picture": "jane_smith.jpg",        
+    "title": "Adapting to Life in Canada",        
+    "subtitle": "My journey as an international student",        
+    "article": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam commodo, magna eu facilisis tincidunt, nisl ante auctor arcu, id commodo magna dui vitae nulla. Donec pellentesque, arcu vel blandit dapibus, mi nunc venenatis sem, vel faucibus orci nibh auctor eros.",        
+    "quote": "I am learning so much from this experience!",
+    "author": "John Smith",
+    "audio_file": "divyansh_agrawal_interview.mp3"     
     }
 ]
 
