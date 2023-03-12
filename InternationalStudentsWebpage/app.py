@@ -14,9 +14,9 @@ students = [
     "title": "Mental health stigma in India causes delays in intervention and treatment",        
     "subtitle": "Some multigenerational families provide guidance for youth while others pass down misconceptions about mental health.",        
     "article_file": "InternationalStudentsWebpage/static/articles/Divyansh Agrawal/Divyansh_Agrawal.txt",        
-    "quote": "I love studying abroad!",
+    "quote": "“As you talk to more people, you get aware, and then you can decide what\'s best for you,” Argawal said.",
     "author": "By Winter Hawk",
-    "audio_file": "divyansh_agrawal_interview.mp3"    
+    "audio_file": "InternationalStudentsWebpage/static/audio/India Divyansh .mp3"    
     },    
     {
     "id": 2,
