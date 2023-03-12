@@ -60,6 +60,8 @@ students = [
 def read_article(filename):
     with open(filename, 'r', encoding='utf-8') as f:
         return f.read()
+        paragraphs = text.split('\n\n')  # split text into paragraphs using two newline characters as a delimiter
+        return paragraphs
 
 # define routes
 @app.route("/")
