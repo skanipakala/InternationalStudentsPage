@@ -23,16 +23,12 @@
                 <h3>{{ student.title }}</h3>
                 <h4>{{ student.subtitle }}</h4>
                 <p>{{ student.quote }}</p>
-                <p>{{ article }}</p>
-                {% if student.author %}
-                <p><strong>Author:</strong> {{ student.author }}</p>
-                {% endif %}
-                {% if student.audio_file %}
+                <p>{{ student.quote }}</p>
                 <audio controls>
-                    <source src="{{ url_for('static', filename='audio/' + student.audio_file) }}" type="audio/mp3">
-                    Your browser does not support the audio element.
+                    <source src="{{ url_for('static', filename=student.audio_file) }}" type="audio/mpeg">
                 </audio>
-                {% endif %}
+                <p>{{ article }}</p>
+                <p><strong>Author:</strong> {{ student.author }}</p>
             </div>
         </div>
     </div>

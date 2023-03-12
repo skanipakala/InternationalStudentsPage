@@ -16,7 +16,7 @@ students = [
     "article_file": "InternationalStudentsWebpage/static/articles/Divyansh Agrawal/Divyansh_Agrawal.txt",        
     "quote": "“As you talk to more people, you get aware, and then you can decide what\'s best for you,” Argawal said.",
     "author": "By Winter Hawk",
-    "audio_file": "InternationalStudentsWebpage/static/audio/India Divyansh .mp3"    
+    "audio_file": "InternationalStudentsWebpage/static/audio/India Divyansh.mp3"    
     },    
     {
     "id": 2,
@@ -62,7 +62,7 @@ def read_article(filename):
         return f.read()
         paragraphs = text.split('\n\n')  # split text into paragraphs using two newline characters as a delimiter
         return paragraphs
-
+  
 # define routes
 @app.route("/")
 def home():
