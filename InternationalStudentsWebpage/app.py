@@ -13,9 +13,9 @@ students = [
     "picture": "john_doe.jpg",        
     "title": "Mental health stigma in India causes delays in intervention and treatment",        
     "subtitle": "Some multigenerational families provide guidance for youth while others pass down misconceptions about mental health.",        
-    "article": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam commodo, magna eu facilisis tincidunt, nisl ante auctor arcu, id commodo magna dui vitae nulla. Donec pellentesque, arcu vel blandit dapibus, mi nunc venenatis sem, vel faucibus orci nibh auctor eros.",        
+    "article_file": "Divyansh Agrawal.txt",        
     "quote": "I love studying abroad!",
-    "author": "John Smith",
+    "author": "By Winter Hawk",
     "audio_file": "divyansh_agrawal_interview.mp3"    
     },    
     {
@@ -25,7 +25,31 @@ students = [
     "picture": "jane_smith.jpg",        
     "title": "Adapting to Life in Canada",        
     "subtitle": "My journey as an international student",        
-    "article": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam commodo, magna eu facilisis tincidunt, nisl ante auctor arcu, id commodo magna dui vitae nulla. Donec pellentesque, arcu vel blandit dapibus, mi nunc venenatis sem, vel faucibus orci nibh auctor eros.",        
+    "article_file": "Divyansh Agrawal.txt",        
+    "quote": "I am learning so much from this experience!",
+    "author": "John Smith",
+    "audio_file": "divyansh_agrawal_interview.mp3"     
+    }, 
+    {
+    "id": 3,
+    "name": "Jane Smith",        
+    "country": "Canada",        
+    "picture": "jane_smith.jpg",        
+    "title": "Adapting to Life in Canada",        
+    "subtitle": "My journey as an international student",        
+    "article_file": "Divyansh Agrawal.txt",        
+    "quote": "I am learning so much from this experience!",
+    "author": "John Smith",
+    "audio_file": "divyansh_agrawal_interview.mp3"     
+    }, 
+    {
+    "id": 4,
+    "name": "Jane Smith",        
+    "country": "Canada",        
+    "picture": "jane_smith.jpg",        
+    "title": "Adapting to Life in Canada",        
+    "subtitle": "My journey as an international student",        
+    "article_file": "Divyansh Agrawal.txt",   
     "quote": "I am learning so much from this experience!",
     "author": "John Smith",
     "audio_file": "divyansh_agrawal_interview.mp3"     
