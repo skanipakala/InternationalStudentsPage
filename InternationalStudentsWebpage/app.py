@@ -3,6 +3,7 @@ from flask import Flask, render_template, url_for, jsonify
 
 # create Flask app
 app = Flask(__name__)
+app.use_static_for = True
 
 # create data for students
 students = [    
@@ -16,7 +17,7 @@ students = [
     "article_file": "InternationalStudentsWebpage/static/articles/Divyansh Agrawal/Divyansh_Agrawal.txt",        
     "quote": "“As you talk to more people, you get aware, and then you can decide what\'s best for you,” Argawal said.",
     "author": "By Winter Hawk",
-    "audio_file": "InternationalStudentsWebpage/static/audio/India Divyansh.mp3"    
+    "audio_file": "IndiaDivyansh.mp3"    
     },    
     {
     "id": 2,
@@ -100,8 +101,9 @@ def student_list():
 def student_detail(id):
     student = students[id-1]
     article_file = student['article_file']
+    audio_file = student['audio_file']
     article = read_article(article_file)
-    return render_template("student_detail.html", student=student, article=article)
+    return render_template("student_detail.html", student=student, article=article, audio_file=audio_file)
 
 # run the app
 if __name__ == "__main__":
