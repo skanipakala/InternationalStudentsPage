@@ -23,7 +23,7 @@
     background-size: contain;
     background-repeat: no-repeat;
 }
-#location-pin-1:hover{
+/* #location-pin-1:hover{
     position: absolute;
     top: 40%;
     left: 59.5%;
@@ -33,7 +33,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 2;
-}
+} */
 
 /* Denmark */
 #location-pin-2 {
