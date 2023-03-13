@@ -28,11 +28,11 @@ students = [
     "name": "Luisa Barros-Checcucci",        
     "country": "Belgium",        
     "picture": "jane_smith.jpg",        
-    "title": "Adapting to Life in Canada",        
-    "subtitle": "My journey as an international student",        
-    "article_file": "Divyansh Agrawal.txt",        
+    "title": "Lack of trained mental health personnel in schools poses risks to student outlook",        
+    "subtitle": "After moving to Maryland from Belgium, Luisa Barros-Checcucci struggled to find the same support she had in Belgium. ",        
+    "article_file": "Luisa_Barros-Checcucci.txt",        
     "quote": "I was breaking down and he made me feel terrible,” Barros-Checcucci said. “He was just kind of like, 'okay, well what do you want me to do about it' type of thing.",
-    "author": "John Smith",
+    "author": "By Winter Hawk",
     "audio_file": "divyansh_agrawal_interview.mp3"     
     }, 
     {
