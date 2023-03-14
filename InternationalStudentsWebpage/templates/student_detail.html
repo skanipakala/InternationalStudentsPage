@@ -9,8 +9,8 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1 class="text-center">{{ student.name }}</h1>
-                <h2 class="text-center">{{ student.country }}</h2>
+                <h1 class="text-center">{{ student.title }}</h1>
+                <h2 class="text-center">{{ student.subtitle }}</h2>
                 <hr>
             </div>
         </div>
@@ -19,15 +19,15 @@
                 <img src="{{ url_for('static', filename='img/student_pics/' + student.picture) }}" class="img-fluid" alt="{{ student.name }}">
             </div>
             <div class="col-md-8">
-                <h3>{{ student.title }}</h3>
-                <h4>{{ student.subtitle }}</h4>
+                <h3>{{ student.name }}</h3>
+                <h4>{{ student.country }}</h4>
+                <p>Author: {{ student.author }}</p>
                 <p>{{ student.quote }}</p>
                 <audio controls>
                     <source src= "{{ url_for('static', filename='audio/' + student['audio_file']) }}" type="audio/mpeg">
                     Your browser does not support the audio element.
                 </audio>
                 <p>{{ article }}</p>
-                <p><strong>Author:</strong> {{ student.author }}</p>
             </div>
         </div>
     </div>
