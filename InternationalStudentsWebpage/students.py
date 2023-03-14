@@ -3,7 +3,7 @@ students = [
     "id": 1,    
     "name": "Divyansh Agrawal",        
     "country": "India",        
-    "picture": "agrawal.png",   
+    "picture": "agrawal.jpg",   
     "country_flag": "India.png",     
     "title": "Mental health stigma in India causes delays in intervention and treatment",        
     "subtitle": "Some multigenerational families provide guidance for youth while others pass down misconceptions about mental health.",        

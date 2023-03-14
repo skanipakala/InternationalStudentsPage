@@ -15,16 +15,11 @@
                 {% for student in students %}
                 <div class="map-pin" id="location-pin-{{ student.id }}">
                     <a href="/student/{{ student.id }}">
-                        <img id="location-pin-{{ student.id }}" class="location-pin" src="/static/img/red_icon.png" alt="Location Pin">
+                        <img id="location-pin-{{ student.id }}" class="location-pin" src="/static/img/location_icons/{{ student.id }}.png" alt="Location Pin">
                     </a>
                 </div>
-                {% endfor %}
+            {% endfor %}            
                 <div class="icon-container">
-                    {% for student in students %}
-                    <div>
-                        <!-- Add the user icon/silhouette with the flag background for each student here -->
-                    </div>
-                    {% endfor %}
                 </div>
             </div>
         </div>
