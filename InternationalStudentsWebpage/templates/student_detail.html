@@ -29,7 +29,9 @@
                         Your browser does not support the audio element.
                     </audio>
                 </div>                
-                <p>{{ article }}</p>
+                {% for paragraph in paragraphs %}
+                <p>{{ paragraph }}</p>
+              {% endfor %}
             </div>
         </div>
     </div>
