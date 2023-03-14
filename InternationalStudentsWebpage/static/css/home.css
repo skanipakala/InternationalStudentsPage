@@ -35,56 +35,44 @@ body {
 }
 /* India */
 #location-pin-1 {
-    top: 70%;
+    top: 79%;
     left: 65%;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-/* #location-pin-1:hover{
-    position: absolute;
-    top: 40%;
-    left: 59.5%;
-    width: 100%;
-    height: 50px;
-    background-image: url("/static/img/India.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: 2;
-} */
-
 /* Denmark */
 #location-pin-2 {
-    top: 26%;
+    top: 55%;
     left: 49.5%;
 }
 /* Belgium */
 #location-pin-3 {
-    top: 29%;
+    top: 60%;
     left: 48.25%;
 }
 /* Pakistan */
 #location-pin-4 {
-    top: 37%;
-    left: 58%;
+    top: 77%;
+    left: 61%;
 }
 /* South Korea */
 #location-pin-5 {
-    top: 34%;
-    left: 66.5%;
+    top: 72%;
+    left: 75.5%;
 }
 /* Ghana */
 #location-pin-6 {
-    bottom: 25%;
-    left: 10%;
+    top: 95%;
+    left: 47%;
 }
 /* Peru */
 #location-pin-7 {
-    bottom: 25%;
-    left: 90%;
+    top: 107%;
+    left: 30%;
 }
 /* El Salvador */
 #location-pin-8 {
-    bottom: 15%;
-    left: 90%;
+    top: 90%;
+    left: 28%;
 }
