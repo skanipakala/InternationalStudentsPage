@@ -9,6 +9,32 @@ body {
   font-family: 'Quiosco';
 }
 
+/* .header {
+  font-size: 30px;
+} */
+
+.quote-box {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  width: 90%;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.quote-text {
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+audio {
+  margin-top: 20px;
+}
+
 .image {
   display: flex;
   align-items: center;
