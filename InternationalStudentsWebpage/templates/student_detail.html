@@ -28,10 +28,12 @@
                         <source src= "{{ url_for('static', filename='audio/' + student['audio_file']) }}" type="audio/mpeg">
                         Your browser does not support the audio element.
                     </audio>
-                </div>                
-                {% for paragraph in paragraphs %}
-                <p>{{ paragraph }}</p>
-              {% endfor %}
+                </div> 
+                <div class = "article">            
+                    {% for paragraph in paragraphs %}
+                    <p>{{ paragraph }}</p>
+                    {% endfor %}
+                </div>   
             </div>
         </div>
     </div>

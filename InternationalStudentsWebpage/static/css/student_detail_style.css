@@ -41,6 +41,11 @@ audio {
   justify-content: center;
 }
 
+.article {
+  margin: 0 auto;
+  width: 90%;
+}
+
 /* Center the main heading */
 h1.text-center {
   text-align: center;
