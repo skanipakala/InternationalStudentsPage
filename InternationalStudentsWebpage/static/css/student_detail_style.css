@@ -25,7 +25,8 @@ body {
 }
 
 .quote-text {
-  margin: 0;
+  margin: 20px;
+  font-size: 35px;
   align-items: center;
   justify-content: center;
   text-align: center;

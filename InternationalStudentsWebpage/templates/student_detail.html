@@ -23,7 +23,7 @@
                 <h4>{{ student.country }}</h4>
                 <p>Author: {{ student.author }}</p>
                 <div class="quote-box">
-                    <p class="quote-text">{{ student.quote }}</p>
+                    <h5 class="quote-text"><b>{{ student.quote }}</b></h5>
                     <audio controls>
                         <source src= "{{ url_for('static', filename='audio/' + student['audio_file']) }}" type="audio/mpeg">
                         Your browser does not support the audio element.
