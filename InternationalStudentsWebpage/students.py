@@ -14,13 +14,13 @@ students = [
     },    
     {
     "id": 2,
-    "name": "Sophia Anderson",        
+    "name": "Sophia Andersen",        
     "country": "Denmark",        
-    "picture": "anderson.png", 
+    "picture": "andersen.png", 
     "country_flag": "Denmark.png",       
     "title": "TITLE HERE",        
     "subtitle": "SUBTITLE HERE",        
-    "article_file": "static/articles/Sophia Anderson/Sophia_Anderson.txt",        
+    "article_file": "static/articles/Sophia Andersen/Sophia_Andersen.txt",        
     "quote": "“I'm still trying to figure out how to live with ADHD, but I feel like the depression is not really that big a deal anymore,” Katharina Andersen said. “I don't go into those slumps anymore because I'm learning how to manage it beforehand.",
     "author": "AUTHOR",
     "audio_file": "DenmarkKatharina.mp3"     
