@@ -63,12 +63,18 @@
     top: 34%;
     left: 66.5%;
 }
-/* Extra pins */
+/* Ghana */
 #location-pin-6 {
     bottom: 25%;
     left: 10%;
 }
+/* Peru */
 #location-pin-7 {
     bottom: 25%;
+    left: 90%;
+}
+/* El Salvador */
+#location-pin-8 {
+    bottom: 15%;
     left: 90%;
 }
