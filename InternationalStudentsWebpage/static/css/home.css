@@ -1,4 +1,14 @@
+@font-face {
+    font-family: 'Quiosco';
+    src: url('/static/fonts/QuioscoOne/QuioscoOne-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
 
+body {
+    font-family: 'Quiosco';
+    font-size: 30px;
+}
 /* Center the map and icon-container */
 .container {
     text-align: center;

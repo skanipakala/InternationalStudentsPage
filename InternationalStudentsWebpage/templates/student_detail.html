@@ -9,13 +9,13 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1 class="text-center">{{ student.title }}</h1>
+                <h1 class="text-center"><strong>{{ student.title }}</strong></h1>
                 <h2 class="text-center">{{ student.subtitle }}</h2>
                 <hr>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4">
+            <div class="image">
                 <img src="{{ url_for('static', filename='img/student_pics/' + student.picture) }}" class="img-fluid" alt="{{ student.name }}">
             </div>
             <div class="col-md-8">
