@@ -48,6 +48,10 @@ audio {
   width: 90%;
 }
 
+.article p {
+  text-align: justify;
+}
+
 /* Center the main heading */
 h1.text-center {
   text-align: center;
