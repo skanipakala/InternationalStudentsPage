@@ -1,0 +1,136 @@
+@font-face {
+    font-family: 'Quiosco';
+    src: url('/static/fonts/QuioscoOne/QuioscoOne-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.popup-left .leaflet-popup-tip {
+    transform: rotate(-90deg); /* rotate the tip of the popup */
+    margin-top: 15px; /* move the tip to the right position */
+    margin-left: -8px;
+  }
+  
+.popup-left .leaflet-popup-content-wrapper {
+margin-left: -60px; /* adjust the position of the popup */
+}
+
+.popup-left .leaflet-popup-content {
+max-width: 150px; /* optional: adjust the width of the popup */
+}
+
+
+.ul {
+    vertical-align: top;
+    text-align: center;
+    display: inline-block;
+}
+
+.th {
+    text-align: center
+}
+
+.td {
+    text-align: center;
+}
+
+
+.body {
+    font-family: 'Quiosco';
+    font-size: 30px;
+}
+
+/* Center the map and icon-container */
+.container {
+    text-align: center;
+}
+
+/* Add margin to the top of the icon-container */
+.icon-container {
+    margin-top: 50px;
+}
+
+/* World map image */
+
+#world-map {
+    max-width: 200%;
+    max-height: 200%;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
+    object-fit: contain;
+}
+
+
+
+
+/* #world-map {
+    width: 80%;
+    height: 80%;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
+} */
+/* Position the location pin image on the map */
+.location-pin {
+    position: absolute;
+    /* Set the position property of the location pin to absolute */
+    top: 50%;
+    /* Center the image vertically */
+    transform: translateY(-50%);
+    /* Center the image vertically */
+    z-index: 1;
+    /* Set the z-index property to ensure the image is on top of the map */
+    width: 30px;
+    /* Set the width property of the location pin to make it smaller */
+}
+
+/* India */
+#location-pin-1 {
+    top: 79%;
+    left: 65%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Denmark */
+#location-pin-2 {
+    top: 55%;
+    left: 49.5%;
+}
+
+/* Belgium */
+#location-pin-3 {
+    top: 60%;
+    left: 48.25%;
+}
+
+/* Pakistan */
+#location-pin-4 {
+    top: 77%;
+    left: 61%;
+}
+
+/* South Korea */
+#location-pin-5 {
+    top: 72%;
+    left: 75.5%;
+}
+
+/* Ghana */
+#location-pin-6 {
+    top: 95%;
+    left: 47%;
+}
+
+/* Peru */
+#location-pin-7 {
+    top: 107%;
+    left: 30%;
+}
+
+/* El Salvador */
+#location-pin-8 {
+    top: 90%;
+    left: 28%;
+}

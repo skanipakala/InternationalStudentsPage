@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="/static/css/home.css">
+</head>
+
+<header style="background-color: #E51D37; height: 75px; display: flex; align-items: center;">
+
+    <a href="https://dbknews.com/" target="_blank">
+        <img src="https://salaryguide.dbknews.com/1a8465ad87edba93883e5f4f6a380826.png"
+            style="height: 40px; margin-right: 10px; margin-left: 10px;">
+    </a>
+
+    <h1 style="color: white; font-size: 24px; margin: 0; text-align: center;">Special Project
+    </h1>
+</header>x
+
+
+<body>
+    <div class="container">
+        <h1>Mental Health Around the World</h1>
+        <p>The Stories of International UMD Students</p>
+        <div class="row">
+            <div class="col-12">
+                <!-- <img id="world-map" src="/static/img/worldmap.png" alt="World Map"> -->
+
+                <div id="mapid" style="width: 100%; height: 520px;"></div>
+
+                <script>
+                    var mymap = L.map('mapid').setView([46, 4.8], 1);
+                    mymap.dragging.disable();
+                    mymap.touchZoom.disable();
+                    mymap.doubleClickZoom.disable();
+                    mymap.scrollWheelZoom.disable();
+                    mymap.boxZoom.disable();
+                    mymap.keyboard.disable();
+
+
+
+                    L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=sk.eyJ1IjoidGhlZGJrbGFiIiwiYSI6ImNsZjk1ZW1rbDAxcjYzeWxlempjcThoODkifQ.U8v4rpXJUH0S8Hnaj5pSHQ', {
+
+                        dragging: false,
+                        zoomControl: false,
+                        minZoom: 2.5,
+                        maxZoom: 5,
+                        maxBounds: L.latLngBounds(
+                            L.latLng(-90, -180), // Southwest corner
+                            L.latLng(90, 180)    // Northeast corner
+                        ),
+
+                        maxBoundsViscosity: 1.0,
+                        // id: 'mapbox/streets-v11',
+                        id: 'mapbox/streets-v11',
+                        tileSize: 512,
+                        zoomOffset: -1,
+                        accessToken: 'sk.eyJ1IjoidGhlZGJrbGFiIiwiYSI6ImNsZjk1ZW1rbDAxcjYzeWxlempjcThoODkifQ.U8v4rpXJUH0S8Hnaj5pSHQ',
+                        style: {
+                            text: ''
+                        }
+                    }).addTo(mymap);
+
+
+                    var jainpur = L.marker([26.4237, 82.3885]).addTo(mymap);
+jainpur.bindPopup("<b>India</b><br><a href='/student/1'><img src='../static/img/location_icons/1.png' style='width: 50px; height: 50px; object-fit: contain;'></a>", {
+    autoClose: false,
+    closeButton: false,
+    closeOnClick: false,
+}).openPopup();
+
+var pakistan = L.marker([30.3753, 69.3451]).addTo(mymap);
+pakistan.bindPopup("<b>Pakistan</b><br><a href='/student/4'><img src='../static/img/location_icons/4.png' style='width: 50px; height: 50px; object-fit: contain;'></a>", {
+    autoClose: false,
+    closeButton: false,
+    closeOnClick: false,
+}).openPopup();
+
+var southKorea = L.marker([35.9078, 127.7669]).addTo(mymap);
+southKorea.bindPopup("<b>South Korea</b><br><a href='/student/5'><img src='../static/img/location_icons/5.png' style='width: 50px; height: 50px; object-fit: contain;'></a>", {
+    autoClose: false,
+    closeButton: false,
+    closeOnClick: false,
+}).openPopup();
+
+var denmark = L.marker([56.2639, 9.5018]).addTo(mymap);
+denmark.bindPopup("<b>Denmark</b><br><a href='/student/2'><img src='../static/img/location_icons/2.png' style='width: 50px; height: 50px; object-fit: contain;'></a>", {
+    autoClose: false,
+    closeButton: false,
+    closeOnClick: false,
+}).openPopup();
+
+var belgium = L.marker([50.5039, 4.4699]).addTo(mymap);
+belgium.bindPopup("<b>Belgium</b><br><a href='/student/3'><img src='../static/img/location_icons/3.png' style='width: 50px; height: 50px; object-fit: contain;'></a>", {
+    autoClose: false,
+    closeButton: false,
+    closeOnClick: false,
+    offset: [0, 30] 
+}).openPopup();
+
+var ghana = L.marker([7.9465, -1.0232]).addTo(mymap);
+ghana.bindPopup("<b>Ghana</b><br><a href='/student/6'><img src='../static/img/location_icons/6.png' style='width: 50px; height: 50px; object-fit: contain;'></a>", {
+    autoClose: false,
+    closeButton: false,
+    closeOnClick: false,
+}).openPopup();
+
+var elSalvador = L.marker([13.7942, -88.8965]).addTo(mymap);
+elSalvador.bindPopup("<b>El Salvador</b><br><a href='/student/8'><img src='../static/img/location_icons/8.png' style='width: 50px; height: 50px; object-fit: contain;'></a>", {
+    autoClose: false,
+    closeButton: false,
+    closeOnClick: false,
+}).openPopup();
+
+                </script>
+
+
+                <!-- {% for student in students %}
+                <div class="map-pin" id="location-pin-{{ student.id }}">
+                    <a href="/student/{{ student.id }}">
+                        <img id="location-pin-{{ student.id }}" class="location-pin"
+                            src="/static/img/location_icons/{{ student.id }}.png" alt="Location Pin">
+                    </a>
+                </div>
+                {% endfor %} -->
+
+
+                <div class="icon-container">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+
+
+<footer
+    style="background-color: #E51D37; color: white; margin: 0 auto; display: flex; justify-content: center; align-items: center;">
+
+    <table>
+        <tr>
+            <th>Reporting</th>
+            <th>Content Editing</th>
+            <th>Research</th>
+        </tr>
+        <tr>
+            <td>
+                <ul>
+                    <li>Winter Hawk</li>
+                    <li>Olivia Wolfson</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Anaya Truss-Williams</li>
+                    <li>Monica Godnick</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Winter Hawk</li>
+                    <li>Illana Williams</li>
+                    <li>Nick Elliott</li>
+                    <li>Sasha Allen</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <th>Illustrations</th>
+            <th>Design &amp; Development</th>
+            <th>Copy Editing</th>
+        </tr>
+        <tr>
+            <td>
+                <ul>
+                    <li>Taneen Momeni</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Bobby Chen</li>
+                    <li>Sri Kanipakala</li>
+                </ul>
+            </td>
+            <td>
+
+
+
+
+                <ul>
+
+
+                    <div style="column-count: 3;">
+                        <li>Olivia Borgula</li>
+                        <li>Harper Lawson</li>
+                        <li>Caroline Baptista</li>
+                        <li>Tolu Talabi</li>
+                        <li>Alayna Brandolini</li>
+                        <li>Matthew Castellanos</li>
+                        <li>Madeline Moldrem</li>
+                        <li>Ella Sherman</li>
+                        <li>Eric Neugeboren</li>
+                        <li>Nataraj Shivaprasad</li>
+                        <li>Devon Milley</li>
+                    </div>
+
+
+
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+</footer>
+
+</html>
