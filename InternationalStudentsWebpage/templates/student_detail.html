@@ -8,20 +8,18 @@
 <body>
     <div class="container">
         <div class="header">
-            <div class="col-md-12">
-                <h1 class="text-center"><strong>{{ student.title }}</strong></h1>
-                <h2 class="text-center">{{ student.subtitle }}</h2>
-                <hr>
-            </div>
+            <h1 class="text-center"><strong>{{ student.title }}</strong></h1>
+            <h2 class="text-center">{{ student.subtitle }}</h2>
+            <h3 class="text-center">{{ student.name }}</h3>
         </div>
         <div class="row">
             <div class="image">
                 <img src="{{ url_for('static', filename='img/student_pics/' + student.picture) }}" class="img-fluid" alt="{{ student.name }}">
             </div>
             <div class="col-md-8">
-                <h3>{{ student.name }}</h3>
-                <h4>{{ student.country }}</h4>
-                <p>Author: {{ student.author }}</p>
+                <!-- <h3>{{ student.name }}</h3> -->
+                <!-- <h4>{{ student.country }}</h4> -->
+                <!-- <p>Author: {{ student.author }}</p> -->
                 <div class="quote-box">
                     <h5 class="quote-text"><b>{{ student.quote }}</b></h5>
                     <audio controls>
