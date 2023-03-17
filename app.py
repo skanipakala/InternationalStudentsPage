@@ -10,7 +10,7 @@ from students import students
 
 
 app = Flask(__name__)
-app.run(host='0.0.0.0', port=3000)
+
 
 # Read the article function
 def read_article(filename):
@@ -41,3 +41,4 @@ def student_detail(id):
 
 # run the app
 
+app.run(host='0.0.0.0', port=3000)
