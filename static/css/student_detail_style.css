@@ -9,9 +9,11 @@ body {
   font-family: 'Quiosco';
 }
 
-/* .header {
-  font-size: 30px;
-} */
+.header {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
 
 .quote-box {
   background-color: black;

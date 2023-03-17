@@ -9,6 +9,8 @@
     <meta charset="UTF-8">
     <title>Home Page</title>
     <link rel="stylesheet" href="/static/css/home.css">
+
+
 </head>
 
 <header style="background-color: #E51D37; height: 75px; display: flex; align-items: center;">
@@ -20,18 +22,40 @@
 
     <h1 style="color: white; font-size: 24px; margin: 0; text-align: center;">Special Project
     </h1>
-</header>x
+</header>
 
 
 <body>
     <div class="container">
-        <h1>Mental Health Around the World</h1>
-        <p>The Stories of International UMD Students</p>
+        <h1 style="font-family: 'Quiosco';  font-size: 40px;">Mental Health Around the World</h1>
+        <p style="font-family: 'Quiosco';  font-size: 20px;">The Stories of International UMD Students</p>
         <div class="row">
             <div class="col-12">
                 <!-- <img id="world-map" src="/static/img/worldmap.png" alt="World Map"> -->
 
-                <div id="mapid" style="width: 100%; height: 520px;"></div>
+                <div id="mapid" style="width: 100%; height: 55vh;"></div>
+                 
+
+       
+                <style>
+                    #mapid {
+                      height: 100%;
+                    }
+                    
+                    @media (max-width: 768px) {
+                      #mapid {
+                        max-height: 400px;
+                      }
+                    }
+                    
+                    @media (max-width: 480px) {
+                      #mapid {
+                        max-height: 300px;
+                      }
+                    }
+                  </style>
+        
+
 
                 <script>
                     var mymap = L.map('mapid').setView([46, 4.8], 1);
@@ -68,70 +92,56 @@
 
 
                     var jainpur = L.marker([26.4237, 82.3885]).addTo(mymap);
-jainpur.bindPopup("<b>India</b><br><a href='/student/1'><img src='../static/img/location_icons/1.png' style='width: 50px; height: 50px; object-fit: contain;'></a>", {
-    autoClose: false,
-    closeButton: false,
-    closeOnClick: false,
-}).openPopup();
+                    jainpur.bindPopup("<b>India</b><br><a href='/student/1'><img src='../static/img/location_icons/1.png' style='width: 50px; height: 50px; object-fit: contain;'></a>", {
+                        autoClose: false,
+                        closeButton: false,
+                        closeOnClick: false,
+                    }).openPopup();
 
-var pakistan = L.marker([30.3753, 69.3451]).addTo(mymap);
-pakistan.bindPopup("<b>Pakistan</b><br><a href='/student/4'><img src='../static/img/location_icons/4.png' style='width: 50px; height: 50px; object-fit: contain;'></a>", {
-    autoClose: false,
-    closeButton: false,
-    closeOnClick: false,
-}).openPopup();
+                    var pakistan = L.marker([30.3753, 69.3451]).addTo(mymap);
+                    pakistan.bindPopup("<b>Pakistan</b><br><a href='/student/4'><img src='../static/img/location_icons/4.png' style='width: 50px; height: 50px; object-fit: contain;'></a>", {
+                        autoClose: false,
+                        closeButton: false,
+                        closeOnClick: false,
+                    }).openPopup();
 
-var southKorea = L.marker([35.9078, 127.7669]).addTo(mymap);
-southKorea.bindPopup("<b>South Korea</b><br><a href='/student/5'><img src='../static/img/location_icons/5.png' style='width: 50px; height: 50px; object-fit: contain;'></a>", {
-    autoClose: false,
-    closeButton: false,
-    closeOnClick: false,
-}).openPopup();
+                    var southKorea = L.marker([35.9078, 127.7669]).addTo(mymap);
+                    southKorea.bindPopup("<b>South Korea</b><br><a href='/student/5'><img src='../static/img/location_icons/5.png' style='width: 50px; height: 50px; object-fit: contain;'></a>", {
+                        autoClose: false,
+                        closeButton: false,
+                        closeOnClick: false,
+                    }).openPopup();
 
-var denmark = L.marker([56.2639, 9.5018]).addTo(mymap);
-denmark.bindPopup("<b>Denmark</b><br><a href='/student/2'><img src='../static/img/location_icons/2.png' style='width: 50px; height: 50px; object-fit: contain;'></a>", {
-    autoClose: false,
-    closeButton: false,
-    closeOnClick: false,
-}).openPopup();
+                    var denmark = L.marker([56.2639, 9.5018]).addTo(mymap);
+                    denmark.bindPopup("<b>Denmark</b><br><a href='/student/2'><img src='../static/img/location_icons/2.png' style='width: 50px; height: 50px; object-fit: contain;'></a>", {
+                        autoClose: false,
+                        closeButton: false,
+                        closeOnClick: false,
+                    }).openPopup();
 
-var belgium = L.marker([50.5039, 4.4699]).addTo(mymap);
-belgium.bindPopup("<b>Belgium</b><br><a href='/student/3'><img src='../static/img/location_icons/3.png' style='width: 50px; height: 50px; object-fit: contain;'></a>", {
-    autoClose: false,
-    closeButton: false,
-    closeOnClick: false,
-    offset: [0, 30] 
-}).openPopup();
+                    var belgium = L.marker([50.5039, 4.4699]).addTo(mymap);
+                    belgium.bindPopup("<b>Belgium</b><br><a href='/student/3'><img src='../static/img/location_icons/3.png' style='width: 50px; height: 50px; object-fit: contain;'></a>", {
+                        autoClose: false,
+                        closeButton: false,
+                        closeOnClick: false,
+                        offset: [0, 30]
+                    }).openPopup();
 
-var ghana = L.marker([7.9465, -1.0232]).addTo(mymap);
-ghana.bindPopup("<b>Ghana</b><br><a href='/student/6'><img src='../static/img/location_icons/6.png' style='width: 50px; height: 50px; object-fit: contain;'></a>", {
-    autoClose: false,
-    closeButton: false,
-    closeOnClick: false,
-}).openPopup();
+                    var ghana = L.marker([7.9465, -1.0232]).addTo(mymap);
+                    ghana.bindPopup("<b>Ghana</b><br><a href='/student/6'><img src='../static/img/location_icons/6.png' style='width: 50px; height: 50px; object-fit: contain;'></a>", {
+                        autoClose: false,
+                        closeButton: false,
+                        closeOnClick: false,
+                    }).openPopup();
 
-var elSalvador = L.marker([13.7942, -88.8965]).addTo(mymap);
-elSalvador.bindPopup("<b>El Salvador</b><br><a href='/student/8'><img src='../static/img/location_icons/8.png' style='width: 50px; height: 50px; object-fit: contain;'></a>", {
-    autoClose: false,
-    closeButton: false,
-    closeOnClick: false,
-}).openPopup();
+                    var elSalvador = L.marker([13.7942, -88.8965]).addTo(mymap);
+                    elSalvador.bindPopup("<b>El Salvador</b><br><a href='/student/8'><img src='../static/img/location_icons/8.png' style='width: 50px; height: 50px; object-fit: contain;'></a>", {
+                        autoClose: false,
+                        closeButton: false,
+                        closeOnClick: false,
+                    }).openPopup();
 
                 </script>
-
-
-                <!-- {% for student in students %}
-                <div class="map-pin" id="location-pin-{{ student.id }}">
-                    <a href="/student/{{ student.id }}">
-                        <img id="location-pin-{{ student.id }}" class="location-pin"
-                            src="/static/img/location_icons/{{ student.id }}.png" alt="Location Pin">
-                    </a>
-                </div>
-                {% endfor %} -->
-
-
-                <div class="icon-container">
-                </div>
             </div>
         </div>
     </div>
@@ -139,84 +149,79 @@ elSalvador.bindPopup("<b>El Salvador</b><br><a href='/student/8'><img src='../st
 
 
 
-
 <footer
     style="background-color: #E51D37; color: white; margin: 0 auto; display: flex; justify-content: center; align-items: center;">
 
-    <table>
+    <table style="padding: 20px;">
         <tr>
-            <th>Reporting</th>
-            <th>Content Editing</th>
-            <th>Research</th>
+            <th style=" font-size: 16px; font-weight: bold;">Reporting 📃</th>
+            <th style="font-size: 16px; font-weight: bold;">Content Editing 📝</th>
+            <th style="font-size: 16px; font-weight: bold;">Research 🔎</th>
         </tr>
         <tr>
-            <td>
-                <ul>
-                    <li>Winter Hawk</li>
-                    <li>Olivia Wolfson</li>
-                </ul>
+            <td style="text-align:center; font-size: 16px; padding-top: 5px;">
+
+                Winter Hawk<br>
+                Olivia Wolfson<br>
             </td>
-            <td>
-                <ul>
-                    <li>Anaya Truss-Williams</li>
-                    <li>Monica Godnick</li>
-                </ul>
+            <td style="text-align:center; font-size: 16px; padding-top: 5px;">
+
+                Anaya Truss-Williams<br>
+                Monica Godnick
             </td>
-            <td>
-                <ul>
-                    <li>Winter Hawk</li>
-                    <li>Illana Williams</li>
-                    <li>Nick Elliott</li>
-                    <li>Sasha Allen</li>
-                </ul>
+            <td style="text-align:center; font-size: 16px; padding-top: 5px;">
+
+                Winter Hawk<br>
+                Illana Williams<br>
+                Nick Elliott<br>
+                Sasha Allen<br>
             </td>
         </tr>
+
+
+
+
         <tr>
-            <th>Illustrations</th>
-            <th>Design &amp; Development</th>
-            <th>Copy Editing</th>
+            <th style="text-align:center; font-size: 16px; font-weight: bold; padding-top: 5px; padding-right: 75px;">
+                Illustrations 📷</th>
+
+
+            <th style="text-align:center; font-size: 16px; font-weight: bold; padding-top: 5px; padding-right: 75px;">
+                Design &amp; Development 💻</th>
+
+            <th style="text-align:center; font-size: 16px; font-weight: bold; padding-top: 5px; padding-right: 75px;">
+                Copy Editing 📰</th>
         </tr>
+
+
         <tr>
-            <td>
-                <ul>
-                    <li>Taneen Momeni</li>
-                </ul>
+            <td style="text-align:center; font-size: 16px; padding-top: 5px;  padding-right: 75px;">
+                Taneen Momeni
             </td>
-            <td>
-                <ul>
-                    <li>Bobby Chen</li>
-                    <li>Sri Kanipakala</li>
-                </ul>
+            <td style="text-align:center; font-size: 16px; padding-top: 5px;  padding-right: 75px;">
+                Bobby Chen<br>
+                Sri Kanipakala
             </td>
-            <td>
-
-
-
-
-                <ul>
-
-
-                    <div style="column-count: 3;">
-                        <li>Olivia Borgula</li>
-                        <li>Harper Lawson</li>
-                        <li>Caroline Baptista</li>
-                        <li>Tolu Talabi</li>
-                        <li>Alayna Brandolini</li>
-                        <li>Matthew Castellanos</li>
-                        <li>Madeline Moldrem</li>
-                        <li>Ella Sherman</li>
-                        <li>Eric Neugeboren</li>
-                        <li>Nataraj Shivaprasad</li>
-                        <li>Devon Milley</li>
-                    </div>
-
-
-
-                </ul>
+            <td style="text-align:center; font-size: 16px; padding-top: 5px;  padding-right: 75px;">
+                <div style="text-align:center; column-count: 3;">
+                    Olivia Borgula<br>
+                    Harper Lawson<br>
+                    Caroline Baptista<br>
+                    Tolu Talabi<br>
+                    Alayna Brandolini<br>
+                    Matthew Castellanos<br>
+                    Madeline Moldrem<br>
+                    Ella Sherman<br>
+                    Eric Neugeboren<br>
+                    Nataraj Shivaprasad<br>
+                    Devon Milley
+                </div>
             </td>
         </tr>
     </table>
 
 </footer>
+
+
 
 </html>
