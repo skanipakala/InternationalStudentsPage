@@ -10,8 +10,7 @@ from students import students
 
 
 app = Flask(__name__)
-app.use_static_for = True
-app.run(debug=False, host='0.0.0.0', port=3000)
+app.run(host='0.0.0.0', port=3000)
 
 # Read the article function
 def read_article(filename):
