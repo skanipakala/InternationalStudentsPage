@@ -21,6 +21,7 @@ def read_article(filename):
         paragraphs = content.split('\n\n')  # split text into paragraphs using two newline characters as a delimiter
     return paragraphs
 
+# Updated main
 
 # define routes
 @app.route("/")
