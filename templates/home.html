@@ -22,43 +22,33 @@
 
     <h1 style="color: white; font-size: 24px; margin: 0; text-align: center;">Special Project
     </h1>
+
+
 </header>
 
 
 <body>
     <div class="container">
         <h1 style="font-family: 'Quiosco';  font-size: 40px;">Mental Health Around the World</h1>
-        <p style="font-family: 'Quiosco';  font-size: 20px;">The Stories of International UMD Students</p>
+
+        <p style="font-size: 18px;">
+            Welcome! This project provides real quotes and captures experiences of mental health on international students. Simply click on a country from the map to learn more about a student's unique story. We hope that by sharing these stories, we can raise awareness and understanding of the challenges that international students may face, and promote a more supportive community for all.
+
+        </p>
         <div class="row">
             <div class="col-12">
                 <!-- <img id="world-map" src="/static/img/worldmap.png" alt="World Map"> -->
 
-                <div id="mapid" style="width: 100%; height: 55vh;"></div>
-                 
+                <div id="mapid" style="width: 100%; height: 58vh;"></div>
+
+
 
        
-                <style>
-                    #mapid {
-                      height: 100%;
-                    }
-                    
-                    @media (max-width: 768px) {
-                      #mapid {
-                        max-height: 400px;
-                      }
-                    }
-                    
-                    @media (max-width: 480px) {
-                      #mapid {
-                        max-height: 300px;
-                      }
-                    }
-                  </style>
-        
+
 
 
                 <script>
-                    var mymap = L.map('mapid').setView([46, 4.8], 1);
+                    var mymap = L.map('mapid').setView([42, 4.8], 1);
                     mymap.dragging.disable();
                     mymap.touchZoom.disable();
                     mymap.doubleClickZoom.disable();
@@ -98,20 +88,6 @@
                         closeOnClick: false,
                     }).openPopup();
 
-                    var pakistan = L.marker([30.3753, 69.3451]).addTo(mymap);
-                    pakistan.bindPopup("<b>Pakistan</b><br><a href='/student/4'><img src='../static/img/location_icons/4.png' style='width: 50px; height: 50px; object-fit: contain;'></a>", {
-                        autoClose: false,
-                        closeButton: false,
-                        closeOnClick: false,
-                    }).openPopup();
-
-                    var southKorea = L.marker([35.9078, 127.7669]).addTo(mymap);
-                    southKorea.bindPopup("<b>South Korea</b><br><a href='/student/5'><img src='../static/img/location_icons/5.png' style='width: 50px; height: 50px; object-fit: contain;'></a>", {
-                        autoClose: false,
-                        closeButton: false,
-                        closeOnClick: false,
-                    }).openPopup();
-
                     var denmark = L.marker([56.2639, 9.5018]).addTo(mymap);
                     denmark.bindPopup("<b>Denmark</b><br><a href='/student/2'><img src='../static/img/location_icons/2.png' style='width: 50px; height: 50px; object-fit: contain;'></a>", {
                         autoClose: false,
@@ -127,12 +103,41 @@
                         offset: [0, 30]
                     }).openPopup();
 
+
+
+                    var pakistan = L.marker([30.3753, 69.3451]).addTo(mymap);
+                    pakistan.bindPopup("<b>Pakistan</b><br><a href='/student/4'><img src='../static/img/location_icons/4.png' style='width: 50px; height: 50px; object-fit: contain;'></a>", {
+                        autoClose: false,
+                        closeButton: false,
+                        closeOnClick: false,
+                    }).openPopup();
+
+                    var southKorea = L.marker([35.9078, 127.7669]).addTo(mymap);
+                    southKorea.bindPopup("<b>South Korea</b><br><a href='/student/5'><img src='../static/img/location_icons/5.png' style='width: 50px; height: 50px; object-fit: contain;'></a>", {
+                        autoClose: false,
+                        closeButton: false,
+                        closeOnClick: false,
+                    }).openPopup();
+
+
+
+
                     var ghana = L.marker([7.9465, -1.0232]).addTo(mymap);
                     ghana.bindPopup("<b>Ghana</b><br><a href='/student/6'><img src='../static/img/location_icons/6.png' style='width: 50px; height: 50px; object-fit: contain;'></a>", {
                         autoClose: false,
                         closeButton: false,
                         closeOnClick: false,
                     }).openPopup();
+
+
+                    var peru = L.marker([-9.1900, -75.0152]).addTo(mymap);
+                    peru.bindPopup("<b>Peru</b><br><a href='/student/7'><img src='../static/img/location_icons/7.png' style='width: 50px; height: 50px; object-fit: contain;'></a>", {
+                        autoClose: false,
+                        closeButton: false,
+                        closeOnClick: false,
+                    }).openPopup();
+
+
 
                     var elSalvador = L.marker([13.7942, -88.8965]).addTo(mymap);
                     elSalvador.bindPopup("<b>El Salvador</b><br><a href='/student/8'><img src='../static/img/location_icons/8.png' style='width: 50px; height: 50px; object-fit: contain;'></a>", {
@@ -147,81 +152,58 @@
     </div>
 </body>
 
-
-
-<footer
-    style="background-color: #E51D37; color: white; margin: 0 auto; display: flex; justify-content: center; align-items: center;">
-
-    <table style="padding: 20px;">
-        <tr>
-            <th style=" font-size: 16px; font-weight: bold;">Reporting 📃</th>
-            <th style="font-size: 16px; font-weight: bold;">Content Editing 📝</th>
-            <th style="font-size: 16px; font-weight: bold;">Research 🔎</th>
-        </tr>
-        <tr>
-            <td style="text-align:center; font-size: 16px; padding-top: 5px;">
-
-                Winter Hawk<br>
-                Olivia Wolfson<br>
-            </td>
-            <td style="text-align:center; font-size: 16px; padding-top: 5px;">
-
-                Anaya Truss-Williams<br>
-                Monica Godnick
-            </td>
-            <td style="text-align:center; font-size: 16px; padding-top: 5px;">
-
-                Winter Hawk<br>
-                Illana Williams<br>
-                Nick Elliott<br>
-                Sasha Allen<br>
-            </td>
-        </tr>
-
-
-
-
-        <tr>
-            <th style="text-align:center; font-size: 16px; font-weight: bold; padding-top: 5px; padding-right: 75px;">
-                Illustrations 📷</th>
-
-
-            <th style="text-align:center; font-size: 16px; font-weight: bold; padding-top: 5px; padding-right: 75px;">
-                Design &amp; Development 💻</th>
-
-            <th style="text-align:center; font-size: 16px; font-weight: bold; padding-top: 5px; padding-right: 75px;">
-                Copy Editing 📰</th>
-        </tr>
-
-
-        <tr>
-            <td style="text-align:center; font-size: 16px; padding-top: 5px;  padding-right: 75px;">
-                Taneen Momeni
-            </td>
-            <td style="text-align:center; font-size: 16px; padding-top: 5px;  padding-right: 75px;">
-                Bobby Chen<br>
-                Sri Kanipakala
-            </td>
-            <td style="text-align:center; font-size: 16px; padding-top: 5px;  padding-right: 75px;">
-                <div style="text-align:center; column-count: 3;">
-                    Olivia Borgula<br>
-                    Harper Lawson<br>
-                    Caroline Baptista<br>
-                    Tolu Talabi<br>
-                    Alayna Brandolini<br>
-                    Matthew Castellanos<br>
-                    Madeline Moldrem<br>
-                    Ella Sherman<br>
-                    Eric Neugeboren<br>
-                    Nataraj Shivaprasad<br>
-                    Devon Milley
-                </div>
-            </td>
-        </tr>
+<footer style="background-color: #E51D37; color: white; margin: 0 auto; display: flex; justify-content: center; align-items: center;">
+    <table style="padding: 30px;">
+      <tr>
+        <th style="font-size: 16px; font-weight: bold; border-right: 1px solid white; padding-right: 10px;">Reporting 📃</th>
+        <th style="font-size: 16px; font-weight: bold; border-right: 1px solid white; padding-right: 10px;">Content Editing 📝</th>
+        <th style="font-size: 16px; font-weight: bold; border-right: 1px solid white; padding-right: 10px;">Research 🔎</th>
+        <th style="font-size: 16px; font-weight: bold; border-right: 1px solid white; padding-right: 10px;">Illustrations 📷</th>
+        <th style="font-size: 16px; font-weight: bold; border-right: 1px solid white; padding-right: 10px;">Design &amp; Development 💻</th>
+        <th style="font-size: 16px; font-weight: bold; padding-right: 10px;">Copy Editing 📰</th>
+      </tr>
+      <tr>
+        <td style="text-align:center; font-size: 16px; padding-top: 5px; border-right: 1px solid white; padding-right: 10px;">
+          Winter Hawk<br>
+          Olivia Wolfson<br>
+        </td>
+        <td style="text-align:center; font-size: 16px; padding-top: 5px; border-right: 1px solid white; padding-right: 10px;">
+          Anaya Truss-Williams<br>
+          Monica Godnick
+        </td>
+        <td style="text-align:center; font-size: 16px; padding-top: 5px; border-right: 1px solid white; padding-right: 10px;">
+          Winter Hawk<br>
+          Illana Williams<br>
+          Nick Elliott<br>
+          Sasha Allen<br>
+        </td>
+        <td style="text-align:center; font-size: 16px; padding-top: 5px; border-right: 1px solid white; padding-right: 10px;">
+          Taneen Momeni
+        </td>
+        <td style="text-align:center; font-size: 16px; padding-top: 5px; border-right: 1px solid white; padding-right: 10px;">
+          Sri Kanipakala<br>
+          Bobby Chen
+        </td>
+        <td style="text-align:center; font-size: 16px; padding-top: 5px;">
+          <div style="text-align:center; column-count: 3;">
+            Olivia Borgula<br>
+            Harper Lawson<br>
+            Caroline Baptista<br>
+            Tolu Talabi<br>
+            Alayna Brandolini<br>
+            Matthew Castellanos<br>
+            Madeline Moldrem<br>
+            Ella Sherman<br>
+            Eric Neugeboren<br>
+            Nataraj Shivaprasad<br>
+            Devon Milley
+          </div>
+        </td>
+      </tr>
     </table>
-
-</footer>
-
+  </footer>
+  
+  
 
 
 </html>

@@ -39,9 +39,11 @@ audio {
 }
 
 .image {
+  height: 100px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center;  
+  
 }
 
 .article {
@@ -75,10 +77,10 @@ hr {
   padding: 2rem;
 }
 
-/* Add margin to the image */
+/* Add margin to the image
 .img-fluid {
   margin-bottom: 1rem;
-}
+} */
 
 /* Adjust font size for quote */
 p:nth-of-type(1) {

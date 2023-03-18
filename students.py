@@ -7,10 +7,11 @@ students = [
     "country_flag": "India.png",     
     "title": "Mental health stigma in India causes delays in intervention and treatment",        
     "subtitle": "Some multigenerational families provide guidance for youth while others pass down misconceptions about mental health.",        
-    "article_file": "static/articles/Divyansh_Agrawal/Divyansh_Agrawal.txt",        
+    "article_file": "static/articles/Divyansh Agrawal/Divyansh_Agrawal.txt",        
     "quote": "“As you talk to more people, you get aware, and then you can decide what\'s best for you,” Argawal said.",
     "author": "Winter Hawk",
-    "audio_file": "IndiaDivyansh.mp3"    
+    "audio_file": "IndiaDivyansh.mp3",
+    "caption": "Divyansh Agrawal moved from Jaipur, India in 2021 in pursuit of his master’s of engineering degree in robotics at the University of Maryland. (Photo courtesy of Divyansh Agrawal)" 
     },    
     {
     "id": 2,
@@ -18,25 +19,28 @@ students = [
     "country": "Denmark",        
     "picture": "andersen.png", 
     "country_flag": "Denmark.png",       
-    "title": "TITLE HERE",        
-    "subtitle": "SUBTITLE HERE",        
+    "title": "Danish healthcare helped students in Denmark navigate mental health",        
+    "subtitle": "From flair-ups with friends to lifelong depressive episodes, Denmark’s mental healthcare system helps youth find help.",        
     "article_file": "static/articles/Sophia Andersen/Sophia_Andersen.txt",        
     "quote": "“I'm still trying to figure out how to live with ADHD, but I feel like the depression is not really that big a deal anymore,” Katharina Andersen said. “I don't go into those slumps anymore because I'm learning how to manage it beforehand.",
     "author": "AUTHOR",
-    "audio_file": "DenmarkKatharina.mp3"     
+    "audio_file": "DenmarkKatharina.mp3"     ,
+    "caption": "Sophia Anderson (left),a civil engineering graduate exchange student,  studied for fall of 2022 at UMD. Her and her sister, Katharina Anderson, are from Lyngby, Denmark. (Photo illustration by Taneen Momeni/The Diamondback) "
     }, 
     {
     "id": 3,
     "name": "Luisa Barros-Checcucci",        
     "country": "Belgium",        
-    "picture": "PICTURE HERE", 
+    "picture": "BELGIUM.png", 
     "country_flag": "Belgium.png",       
     "title": "Lack of trained mental health personnel in schools poses risks to student outlook",        
     "subtitle": "After moving to Maryland from Belgium, Luisa Barros-Checcucci struggled to find the same support she had in Belgium. ",        
     "article_file": "static/articles/Luisa Barros-Checcucci/Luisa_Barros-Checcucci.txt",        
     "quote": "“I was breaking down and he made me feel terrible,” Barros-Checcucci said. “He was just kind of like, 'okay, well what do you want me to do about it' type of thing.”",
     "author": "Winter Hawk",
-    "audio_file": "BelgiumLua.mp3"     
+    "audio_file": "BelgiumLua.mp3",
+    "caption": "Lua Barrios Checcucci, a sophomore neuroscience major, was born in Brazil and lived in Belgium for a total of about 10 years. She moved to Maryland at the age of 16. (Photo illustration by Taneen Momeni/The Diamondback)"
+
     }, 
     {
     "id": 4,
@@ -48,8 +52,9 @@ students = [
     "subtitle": "Political instability and underfunded health systems perpetuate cycles of violence and poor mental health in Pakistan.",        
     "article_file": "static/articles/Ubaid Bakhtiar/Ubaid_Bakhtiar.txt",   
     "quote": "“I dont have a friend from U.S.A,” Bakhtiar said. “People who are in U.S.A, they prefer to have friends with the people that are from U.S.A”",
-    "author": "AUTHOR",
-    "audio_file": "PakistanUbaid.mp3"     
+    "author": "Winter Hawk",
+    "audio_file": "PakistanUbaid.mp3",
+    "caption": "Ubaid Bakhtiar, a computer and electrical engineering graduate student, poses for a portrait at McKeldin Mall on Mar. 8, 2023. It’s Ubaid Bakhtiar first time in Maryland as he moved from Pakistan in August of 2022 to get his PhD in electrical and computer engineering. (Daryl Perry/The Diamondback)"     
     }, 
     {
     "id": 5,
@@ -60,47 +65,52 @@ students = [
     "title": "Students in South Korea begin to value self-care amid academic pressures",        
     "subtitle": "South Korean media and television are helping raise awareness of youth experiences with stress and anxiety.",        
     "article_file": "static/articles/Seungji Rhee/Seungji_Rhee.txt",   
-    "quote": "QUOTE HERE",
+    "quote": "“I sometimes felt like ‘my gosh, I’m not studying,’” Rhee added. “I’m just like a machine, just trying to get a good score on the test.”",
     "author": "Winter Hawk",
-    "audio_file": "KoreaRhee.mp3"     
+    "audio_file": "KoreaRhee.mp3"     ,
+    "caption": "Seungji Rhee is an undergraduate business student at Yonsei University in South Korea who studied for fall of 2022 at UMD. (Photo illustration by Taneen Momeni/The Diamondback)"
+
     }, 
     {
     "id": 6,
     "name": "Herbert Obeng",        
     "country": "Ghana",        
-    "picture": "PICTURE HERE",        
+    "picture": "GHANA.jpeg",        
     "country_flag": "Ghana.png",
-    "title": "TITLE HERE",        
-    "subtitle": "SUBTITLE HERE",        
+    "title": "Strong community support aids Ghanaians during times of economic strife",        
+    "subtitle": " Humor-driven dialogue lightens moods and provides a relief from stress and worry.",        
     "article_file": "static/articles/Herbert Obeng/Herbert_Obeng.txt",   
-    "quote": "QUOTE HERE",
+    "quote": "“We want to be the change that the world wants to see, we want to be the ones to put smiles on the people who have lost hope in their life,”",
     "author": "Winter Hawk",
-    "audio_file": "GhanaHerbert.mp3"     
+    "audio_file": "GhanaHerbert.mp3"     ,
+    "caption": "Herbert Obeng moved to the U.S. about four years ago from Obuasi, Ghana. He is currently studying at Montgomery College but previously was at UMD, and plans to come back fall of 2023. (Photo courtesy of Herbert Obeng)"
     }, 
     {
     "id": 7,
-    "name": "NAME",        
+    "name": "Emilia Guzmán",        
     "country": "Peru",        
-    "picture": "PICTURE",       
+    "picture": "PERU.jpg",       
     "country_flag": "Peru.png", 
-    "title": "TITLE HERE",        
-    "subtitle": "SUBTITLE HERE",        
+    "title": "Peru makes mental health a national initiative after decades of ignoring it",        
+    "subtitle": "Stigma about mental health made conversations about eating disorders secretive among youth.",        
     "article_file": "ARTICLE FILE",   
-    "quote": "QUOTE HERE",
-    "author": "AUTHOR",
-    "audio_file": "AUDIO"     
+    "quote": "“I did everything that I could to lose weight,” Guzmán said. “I got to 100 pounds, and I said, ‘OK, now I’m never going to gain weight.’ … It was a huge struggle for me because I couldn’t eat peacefully.”",
+    "author": "Winter Hawk",
+    "audio_file": "Peru.mp3" ,
+    "caption": "Emilia Guzmán, a freshman economics major, poses for a portrait in ESJ on Mar. 14, 2023. Guzmán was born in Washington, D.C. and grew up in Lima, Peru. She moved back to the U.S. at the age of 17. (Daryl Perry/The Diamondback)"    
     }, 
     {
     "id": 8,
-    "name": "Lindia Gonzalez",        
+    "name": "Lidia Gonzalez",        
     "country": "El Salvador",   
     "country_flag": "El_Salvador.png",     
-    "picture": "NO PHOTO",        
-    "title": "TITLE HERE",        
-    "subtitle": "SUBTITLE HERE",        
+    "picture": "ELSAVADOR.jpg",        
+    "title": "Cultural stigma delays mental health treatment, but awareness is slowly spreading",        
+    "subtitle": "For all her life, Lidia Gonzalez struggled to identify what made her feel depressed. Now her Salvadoran family is starting to understand her pleas for help",        
     "article_file": "static/articles/Lindia Gonzalez/Lindia_Gonzalez.txt",   
-    "quote": "QUOTE HERE",
+    "quote": "“When I started doing my first exam, I was so nervous that my mind went blank,” Gonzalez said. “I was like, ‘Oh my God, this cannot be happening to me.’”",
     "author": "Winter Hawk",
-    "audio_file": "AUDIO"     
+    "audio_file": "ElSalvador.mp3",
+    "caption": "Lidia Gonzalez, a senior accounting major, poses for a portrait in ESJ on Mar. 15, 2023. Gonzalez is from El Salvador and moved to Los Angeles at the age of 18. Then, she relocated to Maryland to continue her education. (Daryl Perry/The Diamondback)"     
     }
 ]

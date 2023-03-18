@@ -6,28 +6,61 @@
     <link rel="stylesheet" href="/static/css/student_detail_style.css">
 </head>
 
-<header style="background-color: #E51D37; height: 75px; display: flex; align-items: center;">
 
-    <a href="https://dbknews.com/" target="_blank">
-        <img src="https://salaryguide.dbknews.com/1a8465ad87edba93883e5f4f6a380826.png"
-            style="height: 40px; margin-right: 10px; margin-left: 10px;">
-    </a>
+<header style="position: fixed; top: 0; left: 0; right: 0; background-color: #E51D37; height: 75px; display: flex; align-items: center; justify-content: space-between; z-index: 1;">
+    <a href="https://dbknews.com/" target="_blank" style="text-decoration: none; color: black;">
+    <div style="display: flex; flex-direction: row;">
+    
+       
+            <img src="https://salaryguide.dbknews.com/1a8465ad87edba93883e5f4f6a380826.png"
+                style="height: 40px; margin-right: 10px; margin-left: 10px;">
+          
+        <h1 style="color: white; font-size: 24px; margin: 0; padding-top: 5px;">Special Project</h1>
+    </div> 
+    </a>  
 
-    <h1 style="color: white; font-size: 24px; margin: 0; text-align: center;">Special Project
-    </h1>
+  
+
+   
+
+
+    <button style="color: white; background-color: #333; border: none; padding: 5px 30px; border-radius: 5px;
+    cursor: pointer; font-size: 18px; display: flex; align-items: center;" onclick="window.location.href='/'">   
+    
+    <img  src="https://cdn-icons-png.flaticon.com/512/5352/5352016.png" alt="Return to Map Icon" style="width: 50px; height: 50px; margin-right: 10px;">
+
+    <span style="white-space: nowrap;">Return to Map</span>
+
+    </button>
+
+    <h5 style="padding-left: 150px;"></h5>
+
 </header>
+
+<div style="height: 50px"></div>
 
 <body>
     <div class="container">
         <div class="header">
             <h1 class="text-center"><strong>{{ student.title }}</strong></h1>
-            <h2 class="text-center">{{ student.subtitle }}</h2>
-            <h3 class="text-center">{{ student.name }}</h3>
+            <h3 class="text-center">{{ student.subtitle }}</h3>
+            <h4 class="text-center">{{ student.name }}</h4>
         </div>
         <div class="row">
-            <div class="image">
-                <img src="{{ url_for('static', filename='img/student_pics/' + student.picture) }}" class="img-fluid" alt="{{ student.name }}">
-            </div>
+
+        
+                <div class="image">
+                    <img 
+                    height="500px"
+                    style="border-radius: 50px; box-shadow: 0 0 10px rgba(0,0,0,0.5);"
+                    src="{{ url_for('static', filename='img/student_pics/' + student.picture) }}" alt="{{ student.name }}">
+                </div>
+
+
+
+                <h4 style="text-align: center;">{{student.caption}}</h4>
+         
+           
             <div class="col-md-8">
                 <!-- <h3>{{ student.name }}</h3> -->
                 <!-- <h4>{{ student.country }}</h4> -->
@@ -48,4 +81,60 @@
         </div>
     </div>
 </body>
+
+
+
+<footer style="background-color: #E51D37; color: white; margin: 0 auto; display: flex; justify-content: center; align-items: center;">
+    <table style="padding: 30px;">
+      <tr>
+        <th style="font-size: 16px; font-weight: bold; border-right: 1px solid white; padding-right: 10px;">Reporting 📃</th>
+        <th style="font-size: 16px; font-weight: bold; border-right: 1px solid white; padding-right: 10px;">Content Editing 📝</th>
+        <th style="font-size: 16px; font-weight: bold; border-right: 1px solid white; padding-right: 10px;">Research 🔎</th>
+        <th style="font-size: 16px; font-weight: bold; border-right: 1px solid white; padding-right: 10px;">Illustrations 📷</th>
+        <th style="font-size: 16px; font-weight: bold; border-right: 1px solid white; padding-right: 10px;">Design &amp; Development 💻</th>
+        <th style="font-size: 16px; font-weight: bold; padding-right: 10px;">Copy Editing 📰</th>
+      </tr>
+      <tr>
+        <td style="text-align:center; font-size: 16px; padding-top: 5px; border-right: 1px solid white; padding-right: 10px;">
+          Winter Hawk<br>
+          Olivia Wolfson<br>
+        </td>
+        <td style="text-align:center; font-size: 16px; padding-top: 5px; border-right: 1px solid white; padding-right: 10px;">
+          Anaya Truss-Williams<br>
+          Monica Godnick
+        </td>
+        <td style="text-align:center; font-size: 16px; padding-top: 5px; border-right: 1px solid white; padding-right: 10px;">
+          Winter Hawk<br>
+          Illana Williams<br>
+          Nick Elliott<br>
+          Sasha Allen<br>
+        </td>
+        <td style="text-align:center; font-size: 16px; padding-top: 5px; border-right: 1px solid white; padding-right: 10px;">
+          Taneen Momeni
+        </td>
+        <td style="text-align:center; font-size: 16px; padding-top: 5px; border-right: 1px solid white; padding-right: 10px;">
+          Sri Kanipakala<br>
+          Bobby Chen
+          
+        </td>
+        <td style="text-align:center; font-size: 16px; padding-top: 5px;">
+          <div style="text-align:center; column-count: 3;">
+            Olivia Borgula<br>
+            Harper Lawson<br>
+            Caroline Baptista<br>
+            Tolu Talabi<br>
+            Alayna Brandolini<br>
+            Matthew Castellanos<br>
+            Madeline Moldrem<br>
+            Ella Sherman<br>
+            Eric Neugeboren<br>
+            Nataraj Shivaprasad<br>
+            Devon Milley
+          </div>
+        </td>
+      </tr>
+    </table>
+  </footer>
+
+
 </html>
