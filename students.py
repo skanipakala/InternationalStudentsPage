@@ -93,7 +93,7 @@ students = [
     "country_flag": "Peru.png", 
     "title": "Peru makes mental health a national initiative after decades of ignoring it",        
     "subtitle": "Stigma about mental health made conversations about eating disorders secretive among youth.",        
-    "article_file": "ARTICLE FILE",   
+    "article_file": "static/articles/Emilia Guzman/Emilia_Guzman.txt",   
     "quote": "“I did everything that I could to lose weight,” Guzmán said. “I got to 100 pounds, and I said, ‘OK, now I’m never going to gain weight.’ … It was a huge struggle for me because I couldn’t eat peacefully.”",
     "author": "Winter Hawk",
     "audio_file": "Peru.mp3" ,
