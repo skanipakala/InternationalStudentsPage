@@ -46,17 +46,28 @@
             <h3 class="text-center">{{ student.subtitle }}</h3>
             <h4 class="text-center">{{ student.name }}</h4>
         </div>
-        <div class="row">
+        <div>
 
         
-                <div class="image">
-                    <img 
+            <div class="image-container">
+                <img 
                     height="500px"
                     style="border-radius: 50px; box-shadow: 0 0 10px rgba(0,0,0,0.5);"
-                    src="{{ url_for('static', filename='img/student_pics/' + student.picture) }}" alt="{{ student.name }}">
-                </div>
-
-
+                    src="{{ url_for('static', filename='img/student_pics/' + student.picture) }}" 
+                    alt="{{ student.name }}"
+                >
+            </div>
+            
+            <style>
+                .image-container {
+                    display: flex;
+                    justify-content: center;
+                }
+            
+                .image-container img {
+                    margin: 0 auto;
+                }
+            </style>
 
                 <h4 style="text-align: center;">{{student.caption}}</h4>
          
