@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{{ student.name }} | Student Details</title>
+    <!-- <title>{{ student.name }} | Student Details</title> -->
     <link rel="stylesheet" href="/static/css/student_detail_style.css">
 </head>
 
@@ -24,7 +24,7 @@
    
 
 
-    <button style="color: white; background-color: #333; border: none; padding: 5px 30px; border-radius: 5px;
+    <button style="color: white; background-color: #333; border: none; padding: 5px 30px; border-radius: 20px ; box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);;
     cursor: pointer; font-size: 18px; display: flex; align-items: center;" onclick="window.location.href='/'">   
     
     <img  src="https://cdn-icons-png.flaticon.com/512/5352/5352016.png" alt="Return to Map Icon" style="width: 50px; height: 50px; margin-right: 10px;">
@@ -43,8 +43,8 @@
     <div class="container">
         <div class="header">
             <h1 class="text-center"><strong>{{ student.title }}</strong></h1>
-            <h3 class="text-center">{{ student.subtitle }}</h3>
-            <h4 class="text-center">{{ student.name }}</h4>
+            <h4 class="text-center">{{ student.subtitle }}</h4>
+            <!-- <h4 class="text-center">{{ student.name }}</h4> -->
         </div>
         <div>
 
@@ -53,7 +53,7 @@
                 <img 
                     height="500px"
                     style="border-radius: 50px; box-shadow: 0 0 10px rgba(0,0,0,0.5);"
-                    src="{{ url_for('static', filename='img/student_pics/' + student.picture) }}" 
+                    src="{{ url_for('static', filename='img/new/' + student.picture) }}" 
                     alt="{{ student.name }}"
                 >
             </div>
@@ -98,12 +98,12 @@
 <footer style="background-color: #E51D37; color: white; margin: 0 auto; display: flex; justify-content: center; align-items: center;">
     <table style="padding: 30px;">
       <tr>
-        <th style="font-size: 16px; font-weight: bold; border-right: 1px solid white; padding-right: 10px;">Reporting 📃</th>
-        <th style="font-size: 16px; font-weight: bold; border-right: 1px solid white; padding-right: 10px;">Content Editing 📝</th>
-        <th style="font-size: 16px; font-weight: bold; border-right: 1px solid white; padding-right: 10px;">Research 🔎</th>
-        <th style="font-size: 16px; font-weight: bold; border-right: 1px solid white; padding-right: 10px;">Illustrations 📷</th>
-        <th style="font-size: 16px; font-weight: bold; border-right: 1px solid white; padding-right: 10px;">Design &amp; Development 💻</th>
-        <th style="font-size: 16px; font-weight: bold; padding-right: 10px;">Copy Editing 📰</th>
+        <th style="font-size: 16px; font-weight: bold; border-right: 1px solid white; padding-right: 10px;">Reporting</th>
+        <th style="font-size: 16px; font-weight: bold; border-right: 1px solid white; padding-right: 10px;">Content Editing</th>
+        <th style="font-size: 16px; font-weight: bold; border-right: 1px solid white; padding-right: 10px;">Research</th>
+        <th style="font-size: 16px; font-weight: bold; border-right: 1px solid white; padding-right: 10px;">Illustrations</th>
+        <th style="font-size: 16px; font-weight: bold; border-right: 1px solid white; padding-right: 10px;">Design &amp; Development</th>
+        <th style="font-size: 16px; font-weight: bold; padding-right: 10px;">Copy Editing</th>
       </tr>
       <tr>
         <td style="text-align:center; font-size: 16px; padding-top: 5px; border-right: 1px solid white; padding-right: 10px;">
