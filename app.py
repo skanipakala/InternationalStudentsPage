@@ -17,7 +17,7 @@ def read_article(filename):
 
     with open(filename, 'r', encoding='utf-8') as f:
         content =  f.read()
-        paragraphs = content.split('\n')  # split text into paragraphs using two newline characters as a delimiter
+        paragraphs = content.strip().split('\n')  # split text into paragraphs using two newline characters as a delimiter
     return paragraphs
 
 # Updated main
